@@ -5,7 +5,7 @@ ENV LANG=C.UTF-8 \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-COPY --from=ghcr.io/astral-sh/uv:0.5.31 /uv /usr/local/bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.11.14 /uv /usr/local/bin/uv
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         gcc \
